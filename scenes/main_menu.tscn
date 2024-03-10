@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cimerd37eqmux"]
+[gd_scene load_steps=2 format=3 uid="uid://cimerd37eqmux"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_catpg"]
 
 [node name="main_menu" type="Node"]
 
@@ -6,10 +8,6 @@
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 19.0
-offset_top = -19.0
-offset_right = 19.0
-offset_bottom = -19.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -31,3 +29,6 @@ theme_override_font_sizes/font_size = 100
 text = "PARASITE"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Willow" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_catpg")

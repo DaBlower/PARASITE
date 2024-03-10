@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h5dscg6xdg53"
-path="res://.godot/imported/willow.svg-8887fd414ad22170ab5ce88e6e44bc7d.ctex"
+uid="uid://lsn6ukkndo46"
+path="res://.godot/imported/willow.png-cf2c981c858c2d0671056ed34cf91db6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://willow.svg"
-dest_files=["res://.godot/imported/willow.svg-8887fd414ad22170ab5ce88e6e44bc7d.ctex"]
+source_file="res://willow.png"
+dest_files=["res://.godot/imported/willow.png-cf2c981c858c2d0671056ed34cf91db6.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
