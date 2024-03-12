@@ -1,30 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cimerd37eqmux"]
+[gd_scene load_steps=3 format=3 uid="uid://cimerd37eqmux"]
 
 [ext_resource type="FontFile" uid="uid://jttp6ecmfd0" path="res://fonts/oswald/Oswald-Bold.ttf" id="1_ily1l"]
-[ext_resource type="Texture2D" uid="uid://5icog573igob" path="res://Ghost Idle.png" id="1_lrdht"]
 [ext_resource type="FontFile" uid="uid://cgvu0ofsbgeei" path="res://fonts/lato/Lato-Bold.ttf" id="2_fj355"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k0m8d"]
-atlas = ExtResource("1_lrdht")
-region = Rect2(0, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yqtve"]
-atlas = ExtResource("1_lrdht")
-region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_catpg"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k0m8d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yqtve")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 2.0
-}]
 
 [node name="main_menu" type="Node"]
 
@@ -71,20 +48,3 @@ theme_override_font_sizes/font_size = 22
 text = "Created by O3D"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 990.0
-offset_top = 414.0
-offset_right = 1138.0
-offset_bottom = 516.0
-
-[node name="Willow" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(1058, 514)
-scale = Vector2(4, 4)
-sprite_frames = SubResource("SpriteFrames_catpg")
-animation = &"idle"
-autoplay = "idle"
-frame_progress = 0.312738
