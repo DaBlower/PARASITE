@@ -1,45 +1,34 @@
-[gd_scene load_steps=10 format=3 uid="uid://r8pu1brr0wxu"]
+[gd_scene load_steps=7 format=3 uid="uid://r8pu1brr0wxu"]
 
 [ext_resource type="Script" path="res://scenes/Food.gd" id="1_4mbn8"]
-[ext_resource type="Texture2D" uid="uid://drsosmcq3i0yi" path="res://New Piskel.png" id="1_12oye"]
 [ext_resource type="Texture2D" uid="uid://dg7y1fmlys2rv" path="res://New Piskel (1).png" id="2_5ssqm"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4jtmx"]
-atlas = ExtResource("1_12oye")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0501v"]
-atlas = ExtResource("1_12oye")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ittu4"]
-atlas = ExtResource("1_12oye")
-region = Rect2(64, 0, 32, 32)
+[ext_resource type="Texture2D" uid="uid://dbyrbuco127fy" path="res://image (5).png" id="3_rax25"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_aqcqe"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4jtmx")
-}],
+"frames": [],
 "loop": true,
 "name": &"1",
-"speed": 1.0
+"speed": 5.0
 }, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0501v")
-}],
+"frames": [],
 "loop": true,
 "name": &"2",
 "speed": 5.0
 }, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ittu4")
-}],
+"frames": [],
 "loop": true,
 "name": &"3",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"5",
 "speed": 5.0
 }]
 
@@ -52,10 +41,13 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m8tw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rax25")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
-"speed": 5.0
+"speed": 1.0
 }]
 
 [node name="Node" type="Node"]
@@ -65,10 +57,10 @@ script = ExtResource("1_4mbn8")
 
 [node name="FoodSprites" type="AnimatedSprite2D" parent="Food"]
 texture_filter = 1
-position = Vector2(-172, 144)
-scale = Vector2(9.875, 9.875)
+position = Vector2(-99, 143)
+scale = Vector2(0.0566667, 0.0566667)
 sprite_frames = SubResource("SpriteFrames_aqcqe")
-animation = &"3"
+animation = &"1"
 
 [node name="Humen" type="Node2D" parent="."]
 
@@ -78,4 +70,5 @@ position = Vector2(1019, 153)
 scale = Vector2(8.96875, 8.96875)
 sprite_frames = SubResource("SpriteFrames_83e7v")
 autoplay = "default"
-frame_progress = 0.920615
+frame = 1
+frame_progress = 0.41818
