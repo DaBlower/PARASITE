@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cimerd37eqmux"]
+[gd_scene load_steps=3 format=3 uid="uid://cimerd37eqmux"]
+
+[ext_resource type="Script" path="res://scripts/Start.gd" id="1_mbcro"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_catpg"]
 
@@ -14,21 +16,35 @@ grow_vertical = 2
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Logo" type="Label" parent="UI"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -228.0
-offset_top = -126.0
-offset_right = 229.0
-offset_bottom = 11.0
+anchors_preset = -1
+anchor_left = 0.301649
+anchor_top = 0.39429
+anchor_right = 0.698351
+anchor_bottom = 0.60571
+offset_bottom = 3.05176e-05
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 100
 text = "PARASITE"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="UI"]
+anchors_preset = -1
+anchor_left = 0.432292
+anchor_top = 0.579475
+anchor_right = 0.567708
+anchor_bottom = 0.698302
+offset_top = 3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "START"
+script = ExtResource("1_mbcro")
+metadata/_edit_use_anchors_ = true
 
 [node name="Willow" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_catpg")
+
+[connection signal="pressed" from="UI/Button" to="UI/Button" method="_on_pressed"]
