@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtjt1u7kvt3cu"
-path="res://.godot/imported/Untitled_Artwork_1-removebg-preview.png-62faae2a430b81d220a7ab72c696755e.ctex"
+uid="uid://ima1vaa71ctx"
+path="res://.godot/imported/Untitled_Artwork-removebg-preview.png-5fd185e2b69a7164a4bc55b663eba7bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://danielARt/bg_gone/Untitled_Artwork_1-removebg-preview.png"
-dest_files=["res://.godot/imported/Untitled_Artwork_1-removebg-preview.png-62faae2a430b81d220a7ab72c696755e.ctex"]
+source_file="res://danielARt/Untitled_Artwork-removebg-preview.png"
+dest_files=["res://.godot/imported/Untitled_Artwork-removebg-preview.png-5fd185e2b69a7164a4bc55b663eba7bf.ctex"]
 
 [params]
 

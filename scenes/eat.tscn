@@ -1,32 +1,52 @@
-[gd_scene load_steps=7 format=3 uid="uid://r8pu1brr0wxu"]
+[gd_scene load_steps=12 format=3 uid="uid://r8pu1brr0wxu"]
 
 [ext_resource type="Script" path="res://scenes/Food.gd" id="1_4mbn8"]
 [ext_resource type="Texture2D" uid="uid://dg7y1fmlys2rv" path="res://New Piskel (1).png" id="2_5ssqm"]
+[ext_resource type="Texture2D" uid="uid://ima1vaa71ctx" path="res://danielARt/Untitled_Artwork-removebg-preview.png" id="2_24woi"]
+[ext_resource type="Texture2D" uid="uid://dtjt1u7kvt3cu" path="res://danielARt/Untitled_Artwork_1-removebg-preview.png" id="3_jww2f"]
 [ext_resource type="Texture2D" uid="uid://dbyrbuco127fy" path="res://image (5).png" id="3_rax25"]
+[ext_resource type="Texture2D" uid="uid://n0cc1al5s0ub" path="res://danielARt/Untitled_Artwork_2-removebg-preview.png" id="4_aiu32"]
+[ext_resource type="Texture2D" uid="uid://2k5n66tclyls" path="res://danielARt/Untitled_Artwork_3-removebg-preview.png" id="5_qnm4f"]
+[ext_resource type="Texture2D" uid="uid://cnuxqkmg2pocw" path="res://danielARt/Untitled_Artwork_4-removebg-preview.png" id="6_gtmt2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_aqcqe"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_24woi")
+}],
 "loop": true,
 "name": &"1",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jww2f")
+}],
 "loop": true,
 "name": &"2",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_aiu32")
+}],
 "loop": true,
 "name": &"3",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_qnm4f")
+}],
 "loop": true,
 "name": &"4",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_gtmt2")
+}],
 "loop": true,
 "name": &"5",
 "speed": 5.0
@@ -57,10 +77,10 @@ script = ExtResource("1_4mbn8")
 
 [node name="FoodSprites" type="AnimatedSprite2D" parent="Food"]
 texture_filter = 1
-position = Vector2(-99, 143)
-scale = Vector2(0.0566667, 0.0566667)
+position = Vector2(312.5, 262.5)
+scale = Vector2(0.214, 0.214)
 sprite_frames = SubResource("SpriteFrames_aqcqe")
-animation = &"1"
+animation = &"5"
 
 [node name="Humen" type="Node2D" parent="."]
 

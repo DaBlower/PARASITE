@@ -6,9 +6,15 @@ var rng = RandomNumberGenerator.new()
 var times : int = 0
 var parasite : bool = false
 var sprite : int = 0
+var repeat : int = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	random()
+	await get_tree().create_timer(1.0).timeout # Create timer
+	if repeat < 100:
+		food_sprites.position += Vector2(10, 2)
+		await get_tree().create_timer(0.5).timeout
+		repeat += 1
 func random():
 	if times >= 30:
 		return
