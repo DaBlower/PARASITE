@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://baf5o3n7f8pqt"]
+
+[ext_resource type="Texture2D" uid="uid://2k5n66tclyls" path="res://danielARt/Untitled_Artwork_3-removebg-preview.png" id="1_lf26v"]
+
+[sub_resource type="Animation" id="Animation_s737j"]
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(55, 154), Vector2(247, 154), Vector2(427.286, 154), Vector2(1047, 154)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_bat5i"]
+resource_name = "to_humen"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(55, 154), Vector2(385, 154), Vector2(1047, 154)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fn2ts"]
+_data = {
+"RESET": SubResource("Animation_s737j"),
+"to_humen": SubResource("Animation_bat5i")
+}
+
+[node name="Doughnut" type="Sprite2D"]
+position = Vector2(427.286, 154)
+scale = Vector2(0.31117, 0.31117)
+texture = ExtResource("1_lf26v")
+region_enabled = true
+region_rect = Rect2(47, 32, 418, 376)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fn2ts")
+}
