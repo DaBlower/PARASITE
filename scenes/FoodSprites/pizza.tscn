@@ -1,6 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://xbh5ls2xcaos"]
 
-[ext_resource type="Texture2D" uid="uid://cnuxqkmg2pocw" path="res://danielARt/Untitled_Artwork_4-removebg-preview.png" id="1_m3kph"]
+[ext_resource type="Texture2D" uid="uid://cnuxqkmg2pocw" path="res://assets/danielARt/Untitled_Artwork_4-removebg-preview.png" id="1_m3kph"]
+
 
 [sub_resource type="Animation" id="Animation_u6spv"]
 resource_name = "pizza"

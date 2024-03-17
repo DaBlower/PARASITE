@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="Parasite"
-run/main_scene="res://scenes/eat.tscn"
+run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+FoodSprites="*res://pointManager.gd"
+BackgroundMusic="*res://scenes/BackgroundMusic.tscn"
 
 [display]
 

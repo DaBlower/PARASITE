@@ -1,6 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bkuf8kh1ynhbc"]
 
-[ext_resource type="Texture2D" uid="uid://ima1vaa71ctx" path="res://danielARt/Untitled_Artwork-removebg-preview.png" id="1_ctgce"]
+[ext_resource type="Texture2D" uid="uid://ima1vaa71ctx" path="res://assets/danielARt/Untitled_Artwork-removebg-preview.png" id="1_ctgce"]
+
 
 [sub_resource type="Animation" id="Animation_4lvqk"]
 resource_name = "egg_to"

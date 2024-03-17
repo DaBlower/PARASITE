@@ -1,0 +1,111 @@
+[gd_scene load_steps=5 format=3 uid="uid://lkcf5eeg6cos"]
+
+[ext_resource type="Script" path="res://gameover.gd" id="1_m8o1l"]
+[ext_resource type="FontFile" uid="uid://jttp6ecmfd0" path="res://fonts/oswald/Oswald-Bold.ttf" id="2_ywkpr"]
+[ext_resource type="FontFile" uid="uid://cgvu0ofsbgeei" path="res://fonts/lato/Lato-Bold.ttf" id="3_n1yyf"]
+[ext_resource type="AudioStream" uid="uid://btjlvsjjw45x6" path="res://assets/music/death.wav" id="4_yrjld"]
+
+[node name="GameOver" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_m8o1l")
+
+[node name="GameOver" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -248.0
+offset_top = -132.5
+offset_right = 248.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.87451, 0.145098, 0.145098, 1)
+theme_override_fonts/font = ExtResource("2_ywkpr")
+theme_override_font_sizes/font_size = 100
+text = "GAME OVER!"
+metadata/_edit_use_anchors_ = true
+
+[node name="Explain" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.269965
+anchor_top = 0.665123
+anchor_right = 0.751736
+anchor_bottom = 0.714506
+offset_top = -69.0
+offset_bottom = -69.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.87451, 0.145098, 0.145098, 1)
+theme_override_fonts/font = ExtResource("3_n1yyf")
+theme_override_font_sizes/font_size = 25
+text = "Your body was infected by a parasite and you died."
+metadata/_edit_use_anchors_ = true
+
+[node name="Score" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.335938
+anchor_top = 0.169753
+anchor_right = 0.421007
+anchor_bottom = 0.219136
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.87451, 0.145098, 0.145098, 1)
+theme_override_fonts/font = ExtResource("3_n1yyf")
+theme_override_font_sizes/font_size = 25
+text = "Score: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="HighScore" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.533854
+anchor_top = 0.169753
+anchor_right = 0.689236
+anchor_bottom = 0.219136
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.87451, 0.145098, 0.145098, 1)
+theme_override_fonts/font = ExtResource("3_n1yyf")
+theme_override_font_sizes/font_size = 25
+text = "Highest score: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Restart" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.0
+offset_top = 76.0
+offset_right = -2.0
+offset_bottom = 129.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_ywkpr")
+theme_override_font_sizes/font_size = 30
+text = "Restart"
+
+[node name="Quit" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 23.0
+offset_top = 77.5
+offset_right = 83.0
+offset_bottom = 130.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_ywkpr")
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_yrjld")
+
+[connection signal="pressed" from="CanvasLayer/Restart" to="CanvasLayer" method="_on_restart_pressed"]
+[connection signal="pressed" from="CanvasLayer/Quit" to="CanvasLayer" method="_on_quit_pressed"]

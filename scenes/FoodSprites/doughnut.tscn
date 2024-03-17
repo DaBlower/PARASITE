@@ -1,6 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://baf5o3n7f8pqt"]
 
-[ext_resource type="Texture2D" uid="uid://2k5n66tclyls" path="res://danielARt/Untitled_Artwork_3-removebg-preview.png" id="1_lf26v"]
+[ext_resource type="Texture2D" uid="uid://2k5n66tclyls" path="res://assets/danielARt/Untitled_Artwork_3-removebg-preview.png" id="1_lf26v"]
+
 
 [sub_resource type="Animation" id="Animation_s737j"]
 length = 4.0

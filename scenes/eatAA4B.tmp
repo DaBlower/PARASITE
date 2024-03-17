@@ -1,0 +1,269 @@
+[gd_scene load_steps=19 format=3 uid="uid://r8pu1brr0wxu"]
+
+[ext_resource type="Script" path="res://scenes/FoodSprites.gd" id="1_ldxn7"]
+[ext_resource type="Texture2D" uid="uid://ima1vaa71ctx" path="res://danielARt/Untitled_Artwork-removebg-preview.png" id="2_24woi"]
+[ext_resource type="Texture2D" uid="uid://dtjt1u7kvt3cu" path="res://danielARt/Untitled_Artwork_1-removebg-preview.png" id="3_jww2f"]
+[ext_resource type="Texture2D" uid="uid://dbyrbuco127fy" path="res://image (5).png" id="3_rax25"]
+[ext_resource type="Texture2D" uid="uid://n0cc1al5s0ub" path="res://danielARt/Untitled_Artwork_2-removebg-preview.png" id="4_aiu32"]
+[ext_resource type="Texture2D" uid="uid://2k5n66tclyls" path="res://danielARt/Untitled_Artwork_3-removebg-preview.png" id="5_qnm4f"]
+[ext_resource type="Texture2D" uid="uid://cnuxqkmg2pocw" path="res://danielARt/Untitled_Artwork_4-removebg-preview.png" id="6_gtmt2"]
+
+[sub_resource type="Animation" id="Animation_s737j"]
+resource_name = "doughnut1"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(55, 154), Vector2(247, 154), Vector2(427.286, 154), Vector2(1047, 154)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fn2ts"]
+_data = {
+"doughnut1": SubResource("Animation_s737j")
+}
+
+[sub_resource type="Animation" id="Animation_4lvqk"]
+resource_name = "egg1"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(47, 154), Vector2(271.875, 154), Vector2(465.607, 154), Vector2(1054, 154)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eepsk"]
+_data = {
+"egg1": SubResource("Animation_4lvqk")
+}
+
+[sub_resource type="Animation" id="Animation_76hge"]
+resource_name = "pear1"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(83, 154), Vector2(243.5, 154), Vector2(412, 154), Vector2(1031, 154)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qdpyc"]
+_data = {
+"pear1": SubResource("Animation_76hge")
+}
+
+[sub_resource type="Animation" id="Animation_h7grj"]
+resource_name = "tomato1"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(77, 154), Vector2(279.25, 154), Vector2(448.786, 156.143), Vector2(1039, 169)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qw25p"]
+_data = {
+"tomato1": SubResource("Animation_h7grj")
+}
+
+[sub_resource type="Animation" id="Animation_u6spv"]
+resource_name = "pizza1"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(62, 154), Vector2(256.5, 154), Vector2(436, 154), Vector2(1058, 154)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a8phi"]
+_data = {
+"pizza1": SubResource("Animation_u6spv")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_83e7v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_rax25")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node" type="Node"]
+
+[node name="Food" type="CharacterBody2D" parent="."]
+position = Vector2(-121, 0)
+
+[node name="FoodSprites" type="Node2D" parent="Food"]
+script = ExtResource("1_ldxn7")
+
+[node name="Doughnut" type="Sprite2D" parent="Food/FoodSprites"]
+position = Vector2(55, 154)
+scale = Vector2(0.31117, 0.31117)
+texture = ExtResource("5_qnm4f")
+region_enabled = true
+region_rect = Rect2(47, 32, 418, 376)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Food/FoodSprites/Doughnut"]
+libraries = {
+"": SubResource("AnimationLibrary_fn2ts")
+}
+
+[node name="Egg" type="Sprite2D" parent="Food/FoodSprites"]
+position = Vector2(47, 154)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("2_24woi")
+region_enabled = true
+region_rect = Rect2(68, 278, 394, 120)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Food/FoodSprites/Egg"]
+libraries = {
+"": SubResource("AnimationLibrary_eepsk")
+}
+
+[node name="Pear" type="Sprite2D" parent="Food/FoodSprites"]
+position = Vector2(83, 154)
+scale = Vector2(0.268683, 0.268683)
+texture = ExtResource("3_jww2f")
+region_enabled = true
+region_rect = Rect2(111, 31, 281, 406)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Food/FoodSprites/Pear"]
+libraries = {
+"": SubResource("AnimationLibrary_qdpyc")
+}
+
+[node name="Tomato" type="Sprite2D" parent="Food/FoodSprites"]
+position = Vector2(77, 154)
+scale = Vector2(0.214506, 0.208838)
+texture = ExtResource("4_aiu32")
+region_enabled = true
+region_rect = Rect2(67, 46, 405, 416)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Food/FoodSprites/Tomato"]
+libraries = {
+"": SubResource("AnimationLibrary_qw25p")
+}
+
+[node name="Pizza" type="Sprite2D" parent="Food/FoodSprites"]
+position = Vector2(62, 154)
+scale = Vector2(0.332808, 0.332808)
+texture = ExtResource("6_gtmt2")
+region_enabled = true
+region_rect = Rect2(142, 77, 356, 317)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Food/FoodSprites/Pizza"]
+libraries = {
+"": SubResource("AnimationLibrary_a8phi")
+}
+
+[node name="Humen" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Humen"]
+texture_filter = 1
+position = Vector2(957, 160)
+scale = Vector2(12.1719, 12.1719)
+sprite_frames = SubResource("SpriteFrames_83e7v")
+autoplay = "default"
+frame_progress = 1.0
+
+[connection signal="animation_finished" from="Food/FoodSprites/Doughnut/AnimationPlayer" to="Food/FoodSprites" method="_on_animation_player_animation_finished"]
+[connection signal="animation_finished" from="Food/FoodSprites/Egg/AnimationPlayer" to="Food/FoodSprites" method="_on_animation_player_animation_finished"]
+[connection signal="animation_finished" from="Food/FoodSprites/Pear/AnimationPlayer" to="Food/FoodSprites" method="_on_animation_player_animation_finished"]
+[connection signal="animation_finished" from="Food/FoodSprites/Tomato/AnimationPlayer" to="Food/FoodSprites" method="_on_animation_player_animation_finished"]
+[connection signal="animation_finished" from="Food/FoodSprites/Pizza/AnimationPlayer" to="Food/FoodSprites" method="_on_animation_player_animation_finished"]

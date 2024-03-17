@@ -1,6 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bhshba4mwqmkt"]
 
-[ext_resource type="Texture2D" uid="uid://dtjt1u7kvt3cu" path="res://danielARt/Untitled_Artwork_1-removebg-preview.png" id="1_r45v0"]
+[ext_resource type="Texture2D" uid="uid://dtjt1u7kvt3cu" path="res://assets/danielARt/Untitled_Artwork_1-removebg-preview.png" id="1_r45v0"]
+
 
 [sub_resource type="Animation" id="Animation_76hge"]
 resource_name = "pear"

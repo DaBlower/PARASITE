@@ -1,6 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://6grjx2j81j32"]
 
-[ext_resource type="Texture2D" uid="uid://n0cc1al5s0ub" path="res://danielARt/Untitled_Artwork_2-removebg-preview.png" id="1_alua3"]
+[ext_resource type="Texture2D" uid="uid://n0cc1al5s0ub" path="res://assets/danielARt/Untitled_Artwork_2-removebg-preview.png" id="1_alua3"]
+
 
 [sub_resource type="Animation" id="Animation_h7grj"]
 resource_name = "tomato"
