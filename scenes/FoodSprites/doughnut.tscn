@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://2k5n66tclyls" path="res://assets/danielARt/Untitled_Artwork_3-removebg-preview.png" id="1_lf26v"]
 
-
 [sub_resource type="Animation" id="Animation_s737j"]
 length = 4.0
 tracks/0/type = "value"
@@ -53,7 +52,7 @@ _data = {
 }
 
 [node name="Doughnut" type="Sprite2D"]
-position = Vector2(427.286, 154)
+position = Vector2(55, 154)
 scale = Vector2(0.31117, 0.31117)
 texture = ExtResource("1_lf26v")
 region_enabled = true
